@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>鱼种图鉴 - 钓鱼佬</title>
+<meta name="description" content="免费鱼种图鉴，涵盖鲫鱼、鲤鱼、草鱼、鲢鳙、翘嘴、黑鱼等15+种常见淡水鱼的习性、钓法和技巧。">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<nav>
+<div class="nav-inner">
+<a href="/" class="nav-logo">🎣 钓鱼佬</a>
+<button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+<div class="nav-links">
+<a href="/">首页</a>
+<a href="/fishing-log.html">钓鱼日志</a>
+<a href="/moon-phase.html">月相潮汐</a>
+<a href="/fish-species.html">鱼种图鉴</a>
+<a href="/knot-guide.html">绑结教程</a>
+<a href="/gear.html">装备推荐</a>
+<a href="/articles/">钓鱼攻略</a>
+</div>
+</div>
+</nav>
+
+<div class="container">
+<div class="tool-header">
+<h1>🐟 常见淡水鱼图鉴</h1>
+<p>15+ 种常见淡水鱼的习性、分布、最佳钓法和实用技巧。覆盖手竿、路亚、海竿等多种钓法。</p>
+</div>
+
+<div class="tool-card">
+<div class="species-search">
+<input type="text" id="species-search-input" placeholder="🔍 搜索鱼种名称、别名或习性...">
+</div>
+<div id="species-list"></div>
+</div>
+</div>
+
+<footer>
+<p>🎣 钓鱼佬 · 免费钓鱼工具箱 · 数据仅存在于本地</p>
+</footer>
+<script src="/js/main.js"></script>
+<script src="/js/species.js"></script>
+</body>
+</html>

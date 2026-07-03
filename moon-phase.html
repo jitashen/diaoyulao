@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>月相潮汐 - 钓鱼佬</title>
+<meta name="description" content="查看今日月相和未来一个月的钓鱼适宜度日历。新月和满月前后是钓鱼黄金期。">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<nav>
+<div class="nav-inner">
+<a href="/" class="nav-logo">🎣 钓鱼佬</a>
+<button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+<div class="nav-links">
+<a href="/">首页</a>
+<a href="/fishing-log.html">钓鱼日志</a>
+<a href="/moon-phase.html">月相潮汐</a>
+<a href="/fish-species.html">鱼种图鉴</a>
+<a href="/knot-guide.html">绑结教程</a>
+<a href="/gear.html">装备推荐</a>
+<a href="/articles/">钓鱼攻略</a>
+</div>
+</div>
+</nav>
+
+<div class="container">
+<div class="tool-header">
+<h1>🌙 月相与钓鱼时机</h1>
+<p>月相直接影响鱼类的觅食活跃度。新月和满月前后3天是钓获黄金期。数据根据天文学算法计算，无需网络。</p>
+</div>
+
+<div class="tool-card" style="text-align:center;" id="moon-display">
+<div class="moon-display">
+<svg class="moon-svg" id="moon-svg" width="180" height="180" viewBox="0 0 180 180"></svg>
+<div class="moon-phase-name" id="moon-phase-name">🌑 新月</div>
+<div class="moon-date" id="moon-date">今天</div>
+<div class="moon-illum" id="moon-illum">月面照亮 0%</div>
+<div style="margin-top:0.75rem;font-size:0.95rem;font-weight:600;" id="moon-tip">今晚鱼口极佳，月相非常理想！</div>
+</div>
+</div>
+
+<div class="tool-card">
+<div style="display:flex;gap:1rem;align-items:center;margin-bottom:1rem;">
+<h3 style="font-size:1rem;margin:0;">📅 钓鱼日历</h3>
+<select id="cal-month" style="padding:0.35rem 0.6rem;border:1px solid var(--border);border-radius:var(--radius);font-size:0.85rem;">
+<option value="1">1月</option><option value="2">2月</option><option value="3">3月</option>
+<option value="4">4月</option><option value="5">5月</option><option value="6">6月</option>
+<option value="7">7月</option><option value="8">8月</option><option value="9">9月</option>
+<option value="10">10月</option><option value="11">11月</option><option value="12">12月</option>
+</select>
+</div>
+<div id="moon-calendar" class="calendar-grid"></div>
+<div style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:0.75rem;font-size:0.8rem;color:var(--text-muted);">
+<span style="display:inline-flex;align-items:center;gap:0.3rem;"><span style="display:inline-block;width:16px;height:16px;background:var(--amber);border-radius:3px;"></span> 黄金钓日</span>
+<span style="display:inline-flex;align-items:center;gap:0.3rem;"><span style="display:inline-block;width:16px;height:16px;background:rgba(42,157,143,0.3);border-radius:3px;"></span> 较好钓日</span>
+<span style="display:inline-flex;align-items:center;gap:0.3rem;"><span style="display:inline-block;width:16px;height:16px;background:rgba(42,157,143,0.15);border-radius:3px;"></span> 一般</span>
+</div>
+</div>
+
+<div class="tool-card">
+<h3 style="font-size:1rem;margin-bottom:0.5rem;">💡 钓鱼与月相的关系</h3>
+<div style="font-size:0.9rem;color:var(--text-muted);line-height:1.7;">
+<p><strong>新月前后（农历初一前后）：</strong> 潮汐变化最大，鱼群活跃度达到峰值。夜钓效果特别好。</p>
+<p><strong>满月前后（农历十五前后）：</strong> 月光强烈，夜间能见度高，掠食性鱼类捕食积极。</p>
+<p><strong>上弦月 / 下弦月：</strong> 鱼口中等，白天出钓效果也可。</p>
+<p style="margin-top:0.5rem;">📌 月相算法纯客户端计算，不依赖任何外部 API。</p>
+</div>
+</div>
+</div>
+
+<footer>
+<p>🎣 钓鱼佬 · 免费钓鱼工具箱 · 数据仅存在于本地</p>
+</footer>
+<script src="/js/main.js"></script>
+<script src="/js/moon-phase.js"></script>
+</body>
+</html>
