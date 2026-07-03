@@ -313,3 +313,24 @@ footer {
   .species-card, .gear-card { flex-direction: column; }
   .moon-svg { width: 140px; height: 140px; }
 }
+
+/* Article content styles */
+.article-content {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 20px 0 40px;
+}
+.article-content h2 {
+  font-size: 1.3em;
+  color: #2c3e50;
+  margin: 30px 0 12px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid #3498db;
+}
+.article-content p {
+  font-size: 1em;
+  line-height: 1.8;
+  color: #444;
+  margin: 0 0 14px;
+  text-indent: 2em;
+}
