@@ -4,15 +4,15 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <base href="/diaoyulao/">
-<title>钓鱼日志 - 钓鱼�?/title>
-<meta name="description" content="免费钓鱼日志工具，记录每次出钓的日期、地点、鱼种、天气和渔获。数据保存在本地浏览器中�?>
+<title>钓鱼日志 - 钓鱼佬</title>
+<meta name="description" content="免费钓鱼日志工具。">
 <link rel="stylesheet" href="/diaoyulao/css/style.css">
 </head>
 <body>
 <nav>
 <div class="nav-inner">
-<a href="/diaoyulao/" class="nav-logo">🎣 钓鱼�?/a>
-<button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')">�?/button>
+<a href="/diaoyulao/" class="nav-logo">🎣 钓鱼佬</a>
+<button class="nav-toggle" onclick="mn()">☰</button>
 <div class="nav-links">
 <a href="/diaoyulao/">首页</a>
 <a href="/diaoyulao/fishing-log.html">钓鱼日志</a>
@@ -24,63 +24,5 @@
 </div>
 </div>
 </nav>
-
-<div class="container">
-<div class="tool-header">
-<h1>📝 钓鱼日志</h1>
-<p>记录每一次出钓，自动统计你的渔获数据。所有数据仅保存在你的浏览器中，不会上传到任何服务器�?/p>
-</div>
-
-<div class="tool-card">
-<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:0.75rem;">
-<div>
-<label>📅 日期</label>
-<input type="date" id="log-date">
-</div>
-<div>
-<label>📍 钓点</label>
-<input type="text" id="log-location" placeholder="钓点名称或位�?>
-</div>
-<div>
-<label>🐟 鱼种</label>
-<input type="text" id="log-species" placeholder="鲫鱼、鲤鱼、草�?..">
-</div>
-<div>
-<label>⚖️ 重量(�?</label>
-<input type="number" id="log-weight" step="0.1" min="0" placeholder="可�?>
-</div>
-<div>
-<label>🌤�?天气</label>
-<select id="log-weather">
-<option>�?/option><option>多云</option><option>�?/option>
-<option>小雨</option><option>中雨</option><option>大雨</option>
-<option>阵雨</option><option>雷阵�?/option>
-</select>
-</div>
-</div>
-<div style="margin-top:0.75rem;">
-<label>📋 备注</label>
-<textarea id="log-notes" placeholder="水情、鱼情、使用饵料等..."></textarea>
-</div>
-<div style="margin-top:0.75rem;display:flex;gap:0.5rem;flex-wrap:wrap;">
-<button class="btn btn-primary" id="log-submit" onclick="addLog()">添加记录</button>
-<button class="btn btn-outline" onclick="clearLogForm()">清空表单</button>
-<button class="btn btn-outline" onclick="exportLogs()">📤 导出 CSV</button>
-</div>
-</div>
-
-<div id="log-stats"></div>
-
-<div class="tool-card">
-<h3 style="margin-bottom:0.5rem;font-size:1rem;">📋 历史记录</h3>
-<div id="log-list"></div>
-</div>
-</div>
-
-<footer>
-<p>🎣 钓鱼�?· 免费钓鱼工具�?· 数据仅存在于本地</p>
-</footer>
-<script src="/diaoyulao/js/main.js"></script>
-<script src="/diaoyulao/js/fishing-log.js"></script>
 </body>
 </html>
